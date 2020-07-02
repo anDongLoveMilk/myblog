@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+    <!--导航-->
+    <nav class="ui inverted m-shadow-small attached segment">
+        <div class="ui container">
+            <div class="ui inverted secondary m-padded-tb-mini stackable menu ">
+                <h2  class="ui teal header item"><i class="home icon"></i>Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>归档</a>
+                <a href="#" class="m-item active item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right  m-item item m-mobile-hide">
+                    <div class="ui icon inverted input transparent">
+                        <input type="text" placeholder="Search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间内容-->
+    <div class="m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <div class="ui segment">
+                        <img src="https://unsplash.it/800/600?iamge=1005" alt="" class="ui rounded image">
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text-thin m-text-spaced m-text-lined">王安东，一个热爱互联网技术技术宅，热爱篮球的BasketBallBoy</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label">编程</div>
+                        <div class="ui orange basic label">篮球</div>
+                        <div class="ui orange basic label">健身</div>
+                        <div class="ui orange basic label">思考</div>
+                    </div>
+
+                    <div class="ui attached segment">
+                       <div class="ui teal basic label m-margin-tb-tiny">java</div>
+                        <div class="ui teal basic label m-margin-tb-tiny">springboot</div>
+                        <div class="ui teal basic label m-margin-tb-tiny">mysql</div>
+                        <div class="ui teal basic label m-margin-tb-tiny">MQ</div>
+
+                    </div>
+
+
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular button"><i class="weixin icon"></i></a>
+                        <a href="#" class="ui qq circular button" data-position="bottom center" data-content="1224894543"><i class="qq icon"></i></a>
+                    </div>
+
+                    <div class="ui wechatQR flowing popup transition hidden">
+                        <img src="../static/images/Wechat.jpg" alt="" class="ui rounded image" style="width: 100px">
+                    </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <img src="../static/images/Wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事 （User Storey）</a>
+                        <a href="#" class="item">用户故事 （User Storey）</a>
+                        <a href="#" class="item">用户故事 （User Storey）</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: 1224894543@qq.com</a>
+                        <a href="#" class="item">QQ: 1224894543</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Wonand</h4>
+                    <p>这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助....</p>
+
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-spaced m-opacity-mini">Copyright@2016-2017 Wonand Designed By Wonand</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../static/js/jquery-3.4.1.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.qq').popup();
+
+        $('.wechat').popup({
+            popup : $('.wechatQR'),
+            on : 'hover',
+            position : 'bottom center'
+        });
+
+    </script>
+
+</body>
+</html>

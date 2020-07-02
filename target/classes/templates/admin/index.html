@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>博客管理</title>
+</head>
+<body>
+    <!--导航-->
+    <nav th:replace="admin/_fragments :: menu(0)" class="ui inverted m-shadow-small attached segment">
+    </nav>
+
+
+
+
+    <!--中间内容-->
+    <div class="m-padded-tb-large m-container-small">
+        <div class="ui container">
+            <div class="ui success large message">
+                <h3>Hi,</h3>
+                <p>王安东，欢迎登陆！</p>
+            </div>
+            <img src="https://unsplash.it/1000/1400?iamge=1005" alt="" class="ui rounded bordered fluid image">
+        </div>
+
+    </div>
+
+    <!--底部-->
+    <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+
+    </footer>
+
+    <th:block th:replace="admin/_fragments :: script">
+    </th:block>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.ui.dropdown').dropdown();
+    </script>
+
+</body>
+</html>
